@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ALLZ{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/legal.css') }}">
+{% endblock %}
+
+{% block body %}
+    {# templates/home.html.twig #}
+    <section class="page">
+        <!-- NAV BAR -->
+        <section class="navbar-section">
+            <nav class="navbar show-nav">
+                <a class="logo" href=""><img class="image-logo" src="{{ asset('Image/ALLZlogo.png') }}"></a>
+                <div class="div-nav-links">
+                    <ul id="ul-navbar">
+                        <li class="nav-links"><a href="{{ path('homepage') }}">Annuaire</a></li>
+                        <li class="nav-links"><a href="{{ path('legal_info') }}">Informations Légales</a></li>
+                        <div class="div-point"></div>
+                        <li class="nav-links">
+                            <div class="last-link">
+                                <a class="nav-links" href="{{ path('app_connexion') }}">Connexion</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="burger"><span class="bar"></span></button>
+            </nav>
+        </section>
+
+        <!-- MENTION LEGALES -->
+        <section class="legal-section">
+            <div class="legal-content">
+                <h2 class="title-legal">MENTIONS LÉGALES</h2>
+                <p class="text-legal">
+                    Directeur de publication : THOMAS DENEUX<br>
+                    Raison sociale : ALLZ company<br>
+                    Adresse : 1er boulevard Pierre Ménès, 1111111 Totoland, Valhalla<br>
+                    Téléphone : +99 00 00 00 11<br>
+                    E-mail : Allz.company@gmail.com<br>
+                    N° SIRET : 111 111 111 111 111<br>
+                </p>
+                <h2 class="title-legal">HÉBERGEMENT</h2>
+                <p class="text-legal">
+                    Raison sociale : OVH<br>
+                    SAS au capital de 150k euro<br>
+                    RCS Roubaix-Tourcoing 424 761 419 000111<br>
+                    Code APE : 6202A<br>
+                    N° TVA : FR 22 424 761 419<br>
+                    Siège social : 2 rue Kellermann - 59100 Roubaix - France<br>
+                </p>
+                <h2 class="title-legal">CRÉATION DU SITE WEB</h2>
+                <p class="text-legal">
+                    THOMAS DENEUX<br>
+                    VINCENT DACHEVILLE<br>
+                    REDA AMLAH<br>
+                    MATTHIEU GARCIA--GIMENEZ<br>
+                    MOHAMED LOUASSI<br>
+                    MOMEN TAKROUN<br>
+                </p>
+            </div>
+        </section>
+    </section>
+{% endblock %}

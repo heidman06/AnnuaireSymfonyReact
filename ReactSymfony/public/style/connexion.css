@@ -1,0 +1,53 @@
+.login-form{
+    font-family: 'Lato', Arial, serif;
+    margin-top: 80px;
+}
+
+.login-form h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.login-form  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login-form  form > *{
+    margin: 5px;
+}
+
+.login-form label{
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    width: 500px;
+}
+
+.login-form  input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px black solid;
+    width: 500px;
+    outline: none;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.login-form  input[type="password"] {
+    margin-bottom: 30px;
+}
+
+.login-form button{
+    background-color: rgb(63, 173, 0);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 500px;
+}
+
+

@@ -1,0 +1,126 @@
+.group-box {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.group-box input {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.group-box>* {
+    height: 45px
+}
+
+#groupCreator {
+    align-items: normal;
+}
+
+#groupCreator>* {
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+#groupCreator button {
+    margin: 0px;
+    padding: 10px 15px 10px 15px;
+}
+
+#listGroups li {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+}
+
+
+#listGroups>* {
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+#listGroups button {
+    padding-right: 300px;
+}
+
+#listGroups img {
+    width: 25px;
+}
+
+#listGroupsContainer {
+    align-items: normal;
+}
+
+#addMemberContainer button {
+    background-color: rgb(63, 173, 0);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 500px;
+}
+
+#addMemberContainer {
+    align-items: normal;
+}
+
+#addMemberContainer h3 {
+    margin-left: 0;
+}
+
+#addMemberContent label {
+    margin-bottom: 10px;
+}
+
+#addMemberContent button {
+    margin-top: 10px;
+}
+
+#deleteMemberContainer {
+    align-items: normal;
+}
+
+#deleteMemberContainer h3 {
+    margin-left: 0;
+}
+
+#deleteMemberContent label {
+    margin-bottom: 10px;
+}
+
+#deleteMemberContent button {
+    background-color: rgb(63, 173, 0);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+#decalage-box {
+    margin-bottom: 30px;
+}
+
+.search-box li {
+    color: white;
+}
+
+#birth-min,
+#birth-max {
+    background-color: white;
+    color: black;
+    margin: 0 5px;
+}
+
+button {
+    background-color: white;
+    border: white solid 1px;
+}
+
+li select {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+}

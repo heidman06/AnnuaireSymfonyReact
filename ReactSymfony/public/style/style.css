@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: white;
+}
+
+.searchBar-section {
+    margin-top: 1rem;
+}
+
+.searchBar-section>h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #091801;
+    text-align: center;
+}
+
+.information-section {
+    font-family: 'Lato', Arial, serif;
+    background-color: #3fad00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.information-section>div {
+    text-align: center;
+}
+
+.information-section>div:nth-of-type(1),
+.information-section>div:nth-of-type(2) {
+    padding: 1em;
+    border-right: 2px solid white;
+}
+
+.information-section>div:nth-of-type(3) {
+    padding: 1em;
+    border-right: 2px solid #3fad00;
+}
+
+.content-section {
+    font-family: 'Lato', Arial, serif;
+    padding: 50px 50px 0 130px;
+}
+
+.content-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #091801;
+}
+
+.content-section h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.content-section p {
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.content-section ul {
+    margin-left: 50px;
+    padding-left: 40px;
+}
+
+.content-section ul p {
+    margin: 0;
+}
+
+.divers-section {
+    font-family: 'Lato', Arial, serif;
+    height: 85px;
+    background-color: #3fad00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divers-section .barre {
+    border-radius: 1px;
+    display: block;
+    width: 1.5px;
+    height: 50%;
+    background-color: white;
+}
+
+.divers-section div {
+    margin-left: 15px;
+    height: 50%;
+    text-align: center;
+}
+
+.divers-section p {
+    color: white;
+    font-size: 14px;
+}
+
+.divers-section .number {
+    font-size: 20px;
+    font-weight: 700;
+}

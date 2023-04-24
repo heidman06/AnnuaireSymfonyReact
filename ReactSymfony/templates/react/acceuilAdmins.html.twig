@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}ALLZ{% endblock %}
+
+
+
+{% block body %}
+	{# templates/home.html.twig #}
+	<section class="page">
+		<!-- NAV BAR -->
+		<section class="navbar-section">
+			<nav class="navbar show-nav">
+				<a class="logo" href=""><img class="image-logo" src="{{ asset('Image/ALLZlogo.png') }}"></a>
+				<div class="div-nav-links">
+					<ul id="ul-navbar">
+						<li class="nav-links"><a href="{{ path('homepage') }}">Annuaire</a></li>
+						<li class="nav-links"><a href="{{ path('legal_info') }}">Informations Légales</a></li>
+						<div class="div-point"></div>
+						<li class="nav-links"><div class="last-link"><a class="nav-links" href="#">Connexion</a></div></li>
+					</ul>
+				</div>
+				<button class="burger"><span class="bar"></span></button>
+			</nav>
+		</section>
+
+		<section class="searchBar-section">
+			<h1 id="sBarTitle">Trouver la ou les personne(s) de l'entreprise <b>ALLZ</b></h1>
+			<div {{ react_component('AdvancedSearchBar') }}></div>
+		</section>
+
+		<div {{ react_component('InfoAnnuaire') }}></div>
+
+
+		<section class="content-section">
+
+			<h1 id="contentTitle">Ajout ou suppression d'un membre du groupe</h1>
+
+			<div {{ react_component('GroupCreator') }}></div>
+
+			<div class="contentPage">
+				<div {{ react_component('ListGroups') }}></div>
+			</div>
+
+
+			<div {{ react_component('AddMember') }}></div>
+
+			<div {{ react_component('DeleteMember') }}></div>
+		</section>
+
+ {#
+		<!-- FOOTER -->
+		<section class="footer-section">
+			<footer class="footer">
+				<div class="footer-content">
+					<p>© 2022 Company name. All rights reserved</p>
+					<div class="footer-point"></div>
+					<a href="#">Information légales</a>
+				</div>
+			</footer>
+		</section>
+	</section>#}
+
+{% endblock %}

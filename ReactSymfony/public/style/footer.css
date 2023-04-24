@@ -1,0 +1,33 @@
+.footer-section {
+    background-image: linear-gradient(to right, #061700, #52c234);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lato', Arial, serif;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.footer-content p{
+    margin-left: 15px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-point {
+    position: relative;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    margin: 3px 15px 0 15px;
+    border-radius: 100%;
+}

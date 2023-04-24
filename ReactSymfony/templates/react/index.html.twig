@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}ALLZ{% endblock %}
+
+
+
+{% block body %}
+	{# templates/home.html.twig #}
+	<section class="page">
+		<!-- NAV BAR -->
+		<section class="navbar-section">
+			<nav class="navbar show-nav">
+				<a class="logo" href=""><img class="image-logo" src="{{ asset('Image/ALLZlogo.png') }}"></a>
+				<div class="div-nav-links">
+					<ul id="ul-navbar">
+						<li class="nav-links"><a href="{{ path('homepage') }}">Annuaire</a></li>
+						<li class="nav-links"><a href="{{ path('legal_info') }}">Informations Légales</a></li>
+						<div class="div-point"></div>
+						<li class="nav-links"><div class="last-link"><a class="nav-links" href="{{ path('app_connexion') }}">Connexion</a>
+							</div></li>
+					</ul>
+				</div>
+				<button class="burger"><span class="bar"></span></button>
+			</nav>
+		</section>
+
+		<section class="searchBar-section">
+			<h1 id="sBarTitle">Trouver la ou les personne(s) de l'entreprise <b>ALLZ</b></h1>
+			<div {{ react_component('SearchBar') }}></div>
+		</section>
+
+		<div {{ react_component('InfoAnnuaire') }}></div>
+
+		<section class="content-section">
+			<h1 id="contentTitle">Aide à la recherche</h1>
+			<div class="contentPage">
+				<div class="contentSection">
+					<h3>Informations utiles</h3>
+					<p class="space">Les accents et les majuscules ne sont pas significatifs, vous pouvez indifféremment les utiliser ou non.</p>
+					<p class="space">Si vous ne remplissez l'un ou tout les champs disponibles dans la recherche, le site vous montrera par défaut toute les possibilités.</p>
+				</div>
+
+				<div class="contentSection">
+					<h3>Comment fonctionne la recherche de personne</h3>
+					<p class="space">La recherche s'effectue sur le début du nom de la personne suivie de son prénom :</p>
+					<ul>
+						<li><p><b>mar</b> recherche toutes les personnes dont le nom commence par <b>mar</b></p></li>
+
+						<li><p><b>martin m</b> recherche toutes les personnes nommées <b>martin</b> dont le prénom commence par <b>m</b></p></li>
+						<li><p>Il est possible d'utiliser le caractère * comme joker</p>
+							<p>c'est à dire que mar* m recherche toutes les personnes dont le nom commence par mar et dont le prénom commence par m</p></li>
+
+						<li><p>Pour les noms composés, le séparateur entre la particule et le nom n'est pas normalisé, il se peut que ce soit un tiret, un blanc, un souligné. Utilisez le joker * pour couvrir tous les cas :</p>
+							<p><b>le*corbusier</b> couvre <b>lecorbusier</b>, <b>le corbusier</b>, <b>le-corbusier</b> et <b>le_corbusier</b></p>
+							<p>si votre recherche est toujours infructueuse, recherchez sur une partie du nom, par exemple : *corbus</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="contentSection">
+					<h3>Comment fonctionne le recherche de services ?</h3>
+					<p>Choisissez simplement dans la recherche le service que vous souhaitez parmi ceux proposé.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- FOOTER -->
+		<section class="footer-section">
+			<footer class="footer">
+				<div class="footer-content">
+					<p>© 2022 Company name. All rights reserved</p>
+					<div class="footer-point"></div>
+					<a href="#">Information légales</a>
+				</div>
+			</footer>
+		</section>
+	</section>
+
+{% endblock %}
+

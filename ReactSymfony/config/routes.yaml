@@ -1,0 +1,85 @@
+homepage:
+    path: /
+    controller: App\Controller\ReactController::index
+
+app_api_search:
+    path: /api/search
+    controller: App\Controller\ReactController::search
+    methods: GET
+
+app_connexion:
+    path: /connexion
+    controller: App\Controller\ReactController::connexion
+    methods: [GET, POST]
+
+legal_info:
+    path: /infosLegales
+    controller: App\Controller\ReactController::info
+
+advancedSearchBar:
+    path: /api/search2
+    controller: App\Controller\ReactController::advancedSearch
+    methods: GET
+
+groupCreator:
+    path: /api/search
+    controller: App\Controller\ReactController::groupCreator
+    methods: GET
+
+get_users:
+    path: /api/get_users
+    controller: App\Controller\ReactController::getUsers
+
+app_create_group:
+    path: /api/create_group
+    controller: App\Controller\ReactController::createGroup
+    methods: POST
+
+get_groups:
+    path: /api/get_groups
+    controller: App\Controller\ReactController::getGroups
+    methods: GET
+
+delete_group:
+    path: /api/delete_group
+    controller: App\Controller\ReactController::deleteGroup
+    methods: POST
+
+add_member:
+    path: /api/add_member
+    controller: App\Controller\ReactController::addMember
+    methods: POST
+
+remove_member:
+    path: /api/remove_member
+    controller: App\Controller\ReactController::removeMember
+    methods: POST
+
+get_group_members:
+    path: /api/get_group_members
+    controller: App\Controller\ReactController::getGroupMembers
+    methods: POST
+
+gender_filter:
+    path: /api/gender
+    controller: App\Controller\ReactController::filterByGender
+
+job_filter:
+    path: /api/job
+    controller: App\Controller\ReactController::filterByJob
+
+service_filter:
+    path: /api/service
+    controller: App\Controller\ReactController::filterByService
+
+getter_jobs:
+    path: /api/getJobs
+    controller: App\Controller\ReactController::getJobs
+
+getter_services:
+    path: /api/getServices
+    controller: App\Controller\ReactController::getServices
+
+birth_filter:
+    path: /api/births
+    controller: App\Controller\ReactController::filterByBirth

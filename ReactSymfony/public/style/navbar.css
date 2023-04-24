@@ -1,0 +1,63 @@
+.image-logo {
+    width: 90px;
+}
+
+.image-loupe {
+    width: 20px;
+    height: 20px;
+}
+
+#ul-navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: linear-gradient(to right, #061700, #52c234);
+    height: 65px;
+}
+
+.nav-links {
+    font-family: 'Lato', Arial, serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+.nav-links>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+}
+
+.last-link a {
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.nav-links>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.div-point {
+    position: relative;
+    top: 8px;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.burger {
+    display: none;
+}

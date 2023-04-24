@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+    <section class="page">
+        <!-- NAV BAR -->
+        <section class="navbar-section">
+            <nav class="navbar show-nav">
+                <a class="logo" href="{{ path('homepage') }}"><img class="image-logo" src="{{ asset('Image/ALLZlogo.png') }}"></a>
+                <div class="div-nav-links">
+                    <ul id="ul-navbar">
+                        <li class="nav-links"><a href="{{ path('homepage') }}">Annuaire</a></li>
+                        <li class="nav-links"><a href="{{ path('legal_info') }}">Informations Légales</a></li>
+                        <div class="div-point"></div>
+                    </ul>
+                </div>
+                <button class="burger"><span class="bar"></span></button>
+            </nav>
+        </section>
+
+        <!-- FORMULAIRE DE CONNEXION -->
+        <section class="login-form">
+            <h2>Connexion</h2>
+            <form method="post" action="{{ path('app_connexion') }}">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="_username" required="required" />
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="_password" required="required" />
+
+                <button type="submit">Se connecter</button>
+            </form>
+        </section>
+    </section>
+{% endblock %}
